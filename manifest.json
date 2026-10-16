@@ -1,0 +1,22 @@
+{
+  "name": "Vieeetnam Trip 2026",
+  "short_name": "Vieeetnam",
+  "description": "Ho Chi Minh City · 11 friends · 6 days · Oct 30 – Nov 5, 2026",
+  "start_url": "/vieeetnam2026/",
+  "scope": "/vieeetnam2026/",
+  "display": "standalone",
+  "background_color": "#FAF7F2",
+  "theme_color": "#C05A2C",
+  "icons": [
+    {
+      "src": "favicon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

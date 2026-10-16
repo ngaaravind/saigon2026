@@ -8,6 +8,8 @@
 <!-- Browser tab icon + phone home-screen icon (same file, browsers scale it themselves) -->
 <link rel="icon" type="image/png" href="favicon.png">
 <link rel="apple-touch-icon" href="favicon.png">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#C05A2C">
 
 <!-- Link preview card (WhatsApp, iMessage, Slack, etc.) -->
 <meta property="og:type" content="website">
@@ -397,6 +399,9 @@ function toggleHospDetails() {
     if (arrival) arrival.classList.add('open');
   }
 })();
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('sw.js');
+}
 </script>
 </body>
 </html>
