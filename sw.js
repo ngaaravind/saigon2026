@@ -1,7 +1,7 @@
 // Service Worker — network-first strategy
 // Always fetches latest when online, falls back to cache when offline
 
-const CACHE_NAME = 'vieeetnam-v5';
+const CACHE_NAME = 'vieeetnam-v6';
 const ASSETS = [
   '/vieeetnam2026/',
   '/vieeetnam2026/index.html',
