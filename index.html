@@ -210,31 +210,43 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);lin
 
   <!-- CREW TAB -->
   <div class="tab-content active" id="tab-crew">
-    <h2 class="section-label">The crew schedule</h2>
-    <div class="sched-legend">
-      <span><div class="sched-swatch" style="background:var(--accent-light);border:1.5px solid var(--accent)"></div> Arriving / departing</span>
-      <span><div class="sched-swatch" style="background:var(--teal-light);border:1.5px solid var(--teal)"></div> In Vietnam</span>
-    </div>
-    <div class="sched-grid">
-      <div class="sg-hdr"></div><div class="sg-hdr">Oct 30<br>Fri</div><div class="sg-hdr">Oct 31<br>Sat</div><div class="sg-hdr">Nov 1<br>Sun</div><div class="sg-hdr">Nov 2<br>Mon</div><div class="sg-hdr">Nov 3<br>Tue</div><div class="sg-hdr">Nov 4<br>Wed</div><div class="sg-hdr">Nov 5<br>Thu</div>
-      <div class="sg-name">Appu</div><div class="sg-cell sg-empty"></div><div class="sg-cell sg-transit">10:55a</div><div class="sg-cell sg-here"></div><div class="sg-cell sg-here"></div><div class="sg-cell sg-here"></div><div class="sg-cell sg-here"></div><div class="sg-cell sg-transit">4:10p</div>
-      <div class="sg-name">Ashok</div><div class="sg-cell sg-empty"></div><div class="sg-cell sg-transit">10:05a</div><div class="sg-cell sg-here"></div><div class="sg-cell sg-here"></div><div class="sg-cell sg-here"></div><div class="sg-cell sg-transit">8:35a</div><div class="sg-cell sg-empty"></div>
-      <div class="sg-name">KD</div><div class="sg-cell sg-transit">3:45p</div><div class="sg-cell sg-here"></div><div class="sg-cell sg-here"></div><div class="sg-cell sg-transit">9:05p</div><div class="sg-cell sg-empty"></div><div class="sg-cell sg-empty"></div><div class="sg-cell sg-empty"></div>
-      <div class="sg-name">Moda</div><div class="sg-cell sg-empty"></div><div class="sg-cell sg-transit">10:15a</div><div class="sg-cell sg-here"></div><div class="sg-cell sg-here"></div><div class="sg-cell sg-here"></div><div class="sg-cell sg-transit">4:40p</div><div class="sg-cell sg-empty"></div>
-      <div class="sg-name">OJ</div><div class="sg-cell sg-transit">4:30p</div><div class="sg-cell sg-here"></div><div class="sg-cell sg-here"></div><div class="sg-cell sg-here"></div><div class="sg-cell sg-here"></div><div class="sg-cell sg-here"></div><div class="sg-cell sg-transit">6:30a</div>
-      <div class="sg-name">Pattu</div><div class="sg-cell sg-transit">4:30p</div><div class="sg-cell sg-here"></div><div class="sg-cell sg-here"></div><div class="sg-cell sg-here"></div><div class="sg-cell sg-here"></div><div class="sg-cell sg-here"></div><div class="sg-cell sg-transit">6:30a</div>
-      <div class="sg-name">Pauly</div><div class="sg-cell sg-transit">11:05p</div><div class="sg-cell sg-here"></div><div class="sg-cell sg-here"></div><div class="sg-cell sg-transit">3:20p</div><div class="sg-cell sg-empty"></div><div class="sg-cell sg-empty"></div><div class="sg-cell sg-empty"></div>
-      <div class="sg-name">Praveen</div><div class="sg-cell sg-empty"></div><div class="sg-cell sg-transit">10:15a</div><div class="sg-cell sg-here"></div><div class="sg-cell sg-here"></div><div class="sg-cell sg-transit">4:40p</div><div class="sg-cell sg-empty"></div><div class="sg-cell sg-empty"></div>
-      <div class="sg-name">Putt</div><div class="sg-cell sg-empty"></div><div class="sg-cell sg-transit">10:15a</div><div class="sg-cell sg-here"></div><div class="sg-cell sg-here"></div><div class="sg-cell sg-here"></div><div class="sg-cell sg-transit">4:40p</div><div class="sg-cell sg-empty"></div>
-      <div class="sg-name">Sakhs</div><div class="sg-cell sg-empty"></div><div class="sg-cell sg-transit">10:05a</div><div class="sg-cell sg-here"></div><div class="sg-cell sg-here"></div><div class="sg-cell sg-here"></div><div class="sg-cell sg-transit">4:10p</div><div class="sg-cell sg-empty"></div>
-      <div class="sg-name sg-count-label">People</div><div class="sg-cell sg-count">4</div><div class="sg-cell sg-count">10</div><div class="sg-cell sg-count">10</div><div class="sg-cell sg-count" style="font-size:11px">10→8</div><div class="sg-cell sg-count" style="font-size:11px">8→7</div><div class="sg-cell sg-count" style="font-size:11px">7→3</div><div class="sg-cell sg-count" style="font-size:11px">3→0</div>
+
+    <div class="notes-section">
+      <h2 class="section-label">Crew schedule</h2>
+      <div class="notes-card">
+        <div class="notes-header" onclick="this.parentElement.classList.toggle('open')">
+          <span class="notes-icon">📅</span>
+          <span class="notes-label">Who's there when</span>
+          <span class="notes-chevron">›</span>
+        </div>
+        <div class="notes-body" style="padding:10px 12px 14px">
+          <div class="sched-legend">
+            <span><div class="sched-swatch" style="background:var(--accent-light);border:1.5px solid var(--accent)"></div> Arriving / departing</span>
+            <span><div class="sched-swatch" style="background:var(--teal-light);border:1.5px solid var(--teal)"></div> In Vietnam</span>
+          </div>
+          <div class="sched-grid">
+            <div class="sg-hdr"></div><div class="sg-hdr">Oct 30<br>Fri</div><div class="sg-hdr">Oct 31<br>Sat</div><div class="sg-hdr">Nov 1<br>Sun</div><div class="sg-hdr">Nov 2<br>Mon</div><div class="sg-hdr">Nov 3<br>Tue</div><div class="sg-hdr">Nov 4<br>Wed</div><div class="sg-hdr">Nov 5<br>Thu</div>
+            <div class="sg-name">Appu</div><div class="sg-cell sg-empty"></div><div class="sg-cell sg-transit">10:55a</div><div class="sg-cell sg-here"></div><div class="sg-cell sg-here"></div><div class="sg-cell sg-here"></div><div class="sg-cell sg-here"></div><div class="sg-cell sg-transit">4:10p</div>
+            <div class="sg-name">Ashok</div><div class="sg-cell sg-empty"></div><div class="sg-cell sg-transit">10:05a</div><div class="sg-cell sg-here"></div><div class="sg-cell sg-here"></div><div class="sg-cell sg-here"></div><div class="sg-cell sg-transit">8:35a</div><div class="sg-cell sg-empty"></div>
+            <div class="sg-name">KD</div><div class="sg-cell sg-transit">3:45p</div><div class="sg-cell sg-here"></div><div class="sg-cell sg-here"></div><div class="sg-cell sg-transit">9:05p</div><div class="sg-cell sg-empty"></div><div class="sg-cell sg-empty"></div><div class="sg-cell sg-empty"></div>
+            <div class="sg-name">Moda</div><div class="sg-cell sg-empty"></div><div class="sg-cell sg-transit">10:15a</div><div class="sg-cell sg-here"></div><div class="sg-cell sg-here"></div><div class="sg-cell sg-here"></div><div class="sg-cell sg-transit">4:40p</div><div class="sg-cell sg-empty"></div>
+            <div class="sg-name">OJ</div><div class="sg-cell sg-transit">4:30p</div><div class="sg-cell sg-here"></div><div class="sg-cell sg-here"></div><div class="sg-cell sg-here"></div><div class="sg-cell sg-here"></div><div class="sg-cell sg-here"></div><div class="sg-cell sg-transit">6:30a</div>
+            <div class="sg-name">Pattu</div><div class="sg-cell sg-transit">4:30p</div><div class="sg-cell sg-here"></div><div class="sg-cell sg-here"></div><div class="sg-cell sg-here"></div><div class="sg-cell sg-here"></div><div class="sg-cell sg-here"></div><div class="sg-cell sg-transit">6:30a</div>
+            <div class="sg-name">Pauly</div><div class="sg-cell sg-transit">11:05p</div><div class="sg-cell sg-here"></div><div class="sg-cell sg-here"></div><div class="sg-cell sg-transit">3:20p</div><div class="sg-cell sg-empty"></div><div class="sg-cell sg-empty"></div><div class="sg-cell sg-empty"></div>
+            <div class="sg-name">Praveen</div><div class="sg-cell sg-empty"></div><div class="sg-cell sg-transit">10:15a</div><div class="sg-cell sg-here"></div><div class="sg-cell sg-here"></div><div class="sg-cell sg-transit">4:40p</div><div class="sg-cell sg-empty"></div><div class="sg-cell sg-empty"></div>
+            <div class="sg-name">Putt</div><div class="sg-cell sg-empty"></div><div class="sg-cell sg-transit">10:15a</div><div class="sg-cell sg-here"></div><div class="sg-cell sg-here"></div><div class="sg-cell sg-here"></div><div class="sg-cell sg-transit">4:40p</div><div class="sg-cell sg-empty"></div>
+            <div class="sg-name">Sakhs</div><div class="sg-cell sg-empty"></div><div class="sg-cell sg-transit">10:05a</div><div class="sg-cell sg-here"></div><div class="sg-cell sg-here"></div><div class="sg-cell sg-here"></div><div class="sg-cell sg-transit">4:10p</div><div class="sg-cell sg-empty"></div>
+            <div class="sg-name sg-count-label">People</div><div class="sg-cell sg-count">4</div><div class="sg-cell sg-count">10</div><div class="sg-cell sg-count">10</div><div class="sg-cell sg-count" style="font-size:11px">10→8</div><div class="sg-cell sg-count" style="font-size:11px">8→7</div><div class="sg-cell sg-count" style="font-size:11px">7→3</div><div class="sg-cell sg-count" style="font-size:11px">3→0</div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="notes-section">
       <h2 class="section-label">Travel notes</h2>
 
-      <div class="notes-card open">
-        <div class="notes-header" onclick="this.parentElement.classList.toggle('open')">
+      <div class="notes-card" data-note>
+        <div class="notes-header" onclick="toggleNote(this)">
           <span class="notes-icon">✈️</span>
           <span class="notes-label">Before you fly</span>
           <span class="notes-chevron">›</span>
@@ -250,8 +262,8 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);lin
         </div>
       </div>
 
-      <div class="notes-card">
-        <div class="notes-header" onclick="this.parentElement.classList.toggle('open')">
+      <div class="notes-card" data-note>
+        <div class="notes-header" onclick="toggleNote(this)">
           <span class="notes-icon">🛬</span>
           <span class="notes-label">When you land</span>
           <span class="notes-chevron">›</span>
@@ -273,8 +285,8 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);lin
         </div>
       </div>
 
-      <div class="notes-card">
-        <div class="notes-header" onclick="this.parentElement.classList.toggle('open')">
+      <div class="notes-card" data-note>
+        <div class="notes-header" onclick="toggleNote(this)">
           <span class="notes-icon">🏍️</span>
           <span class="notes-label">During the trip</span>
           <span class="notes-chevron">›</span>
@@ -297,8 +309,8 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);lin
         </div>
       </div>
 
-      <div class="notes-card">
-        <div class="notes-header" onclick="this.parentElement.classList.toggle('open')">
+      <div class="notes-card" data-note>
+        <div class="notes-header" onclick="toggleNote(this)">
           <span class="notes-icon">🏠</span>
           <span class="notes-label">After the trip</span>
           <span class="notes-chevron">›</span>
@@ -310,6 +322,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);lin
         </div>
       </div>
     </div>
+
   </div>
 
   <!-- BOOKINGS TAB -->
@@ -472,6 +485,17 @@ function switchTab(tab) {
   document.getElementById('tab-' + tab).classList.add('active');
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
+function toggleNote(header) {
+  var card = header.parentElement;
+  var allNotes = card.parentElement.querySelectorAll('.notes-card[data-note]');
+  if (card.classList.contains('open')) {
+    card.classList.remove('open');
+  } else {
+    allNotes.forEach(function(n) { n.classList.remove('open'); });
+    card.classList.add('open');
+    setTimeout(function() { card.scrollIntoView({ behavior: 'smooth', block: 'nearest' }); }, 50);
+  }
+}
 function toggleDay(header) {
   var day = header.parentElement;
   var allDays = document.querySelectorAll('.day');
@@ -508,6 +532,17 @@ function toggleHospDetails() {
     var arrival = document.querySelector('.day[data-date="2026-10-30"]');
     if (arrival) arrival.classList.add('open');
   }
+})();
+(function() {
+  var notes = document.querySelectorAll('.notes-card[data-note]');
+  if (!notes.length) return;
+  var today = new Date();
+  var todayStr = today.getFullYear() + '-' + String(today.getMonth()+1).padStart(2,'0') + '-' + String(today.getDate()).padStart(2,'0');
+  var idx = 0;
+  if (todayStr >= '2026-11-06') idx = 3;
+  else if (todayStr >= '2026-10-31') idx = 2;
+  else if (todayStr >= '2026-10-30') idx = 1;
+  notes[idx].classList.add('open');
 })();
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('sw.js');
